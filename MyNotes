@@ -16,3 +16,10 @@ More about it can be read about here: https://stackoverflow.com/a/64320105/42674
 
 4.) In optimization part of webpack.config > moduleIds: "hashed" - has been depricated.
 So we use: > moduleIds: "deterministic" - now.
+
+5.) In case I want to include something from bootstrap that I have failed up until now on my own, I can find some help here:
+- https://code.luasoftware.com/tutorials/vuejs/setup-bootstrap-with-vue-cli-3-webpack/  (for usage if javascript functionalities)
+- https://code.luasoftware.com/tutorials/vuejs/vuejs-import-bootstrap-scss/ (just css)
+- https://code.luasoftware.com/tutorials/vuejs/setup-bootstrapvue-with-vue-cli/
+
+6.)
