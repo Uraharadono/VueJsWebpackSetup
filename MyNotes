@@ -1,0 +1,18 @@
+HOLY BOOK THAT HELPED ME WITH ALL OF THIS: https://dev.to/lavikara/setup-vue-webpack-and-babel-boo
+
+
+1.) Issues emerged with newest webpack versions not being compatible with webpack-dev-server.
+Reason for that is that NO MORE dev server with newer webpacks, these links helped a lot with fixing that:
+- https://stackoverflow.com/a/64205610/4267429 -
+- https://github.com/webpack/webpack-dev-server/issues/2029#issuecomment-707196728"
+
+
+2.) CSS loader cannot use both "style-loader" and MiniCssExtractPlugin.loader together. It drops a fuck ton of errors.
+So I have to chose one of that two.
+More about it can be read about here: https://stackoverflow.com/a/64320105/4267429
+
+
+3.) Postcss-loader also has changes where it says that "options" property has new way of assining to it.
+
+4.) In optimization part of webpack.config > moduleIds: "hashed" - has been depricated.
+So we use: > moduleIds: "deterministic" - now.
