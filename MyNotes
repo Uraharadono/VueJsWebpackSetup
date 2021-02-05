@@ -2,8 +2,8 @@ HOLY BOOK THAT HELPED ME WITH ALL OF THIS: https://dev.to/lavikara/setup-vue-web
 
 
 1.) Issues emerged with newest webpack versions not being compatible with webpack-dev-server.
-Reason for that is that NO MORE dev server with newer webpacks, these links helped a lot with fixing that:
-- https://stackoverflow.com/a/64205610/4267429 -
+Reason for that is that NO MORE can we use same command as before "webpack-dev-server", we have to rather use "serve" :
+- https://stackoverflow.com/a/64205610/4267429
 - https://github.com/webpack/webpack-dev-server/issues/2029#issuecomment-707196728"
 
 
@@ -22,4 +22,5 @@ So we use: > moduleIds: "deterministic" - now.
 - https://code.luasoftware.com/tutorials/vuejs/vuejs-import-bootstrap-scss/ (just css)
 - https://code.luasoftware.com/tutorials/vuejs/setup-bootstrapvue-with-vue-cli/
 
-6.)
+6.) For auth stuff, take a look at this solution: https://jasonwatmore.com/post/2018/07/06/vue-vuex-jwt-authentication-tutorial-example
+This seems like a nice way to handle things.

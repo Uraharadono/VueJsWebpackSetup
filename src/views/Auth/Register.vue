@@ -1,79 +1,25 @@
 <template>
-  <form class="form-horizontal" action="" method="POST">
-    <fieldset>
-      <div id="legend">
-        <legend class="">Register</legend>
+  <form class="form-horizontal">
+        <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+      />
+      <div id="emailHelp" class="form-text">
+        We'll never share your email with anyone else.
       </div>
-      <div class="control-group">
-        <!-- Username -->
-        <label class="control-label" for="username">Username</label>
-        <div class="controls">
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder=""
-            class="input-xlarge"
-          />
-          <p class="help-block">
-            Username can contain any letters or numbers, without spaces
-          </p>
-        </div>
-      </div>
-
-      <div class="control-group">
-        <!-- E-mail -->
-        <label class="control-label" for="email">E-mail</label>
-        <div class="controls">
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder=""
-            class="input-xlarge"
-          />
-          <p class="help-block">Please provide your E-mail</p>
-        </div>
-      </div>
-
-      <div class="control-group">
-        <!-- Password-->
-        <label class="control-label" for="password">Password</label>
-        <div class="controls">
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder=""
-            class="input-xlarge"
-          />
-          <p class="help-block">Password should be at least 4 characters</p>
-        </div>
-      </div>
-
-      <div class="control-group">
-        <!-- Password -->
-        <label class="control-label" for="password_confirm"
-          >Password (Confirm)</label
-        >
-        <div class="controls">
-          <input
-            type="password"
-            id="password_confirm"
-            name="password_confirm"
-            placeholder=""
-            class="input-xlarge"
-          />
-          <p class="help-block">Please confirm password</p>
-        </div>
-      </div>
-
-      <div class="control-group">
-        <!-- Button -->
-        <div class="controls">
-          <button class="btn btn-success">Register</button>
-        </div>
-      </div>
-    </fieldset>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" />
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </template>

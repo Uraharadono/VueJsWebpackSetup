@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "NOTE:": "NO MORE dev server with newer webpacks. https://stackoverflow.com/a/64205610/4267429 - https://github.com/webpack/webpack-dev-server/issues/2029#issuecomment-707196728",
     "build": "webpack serve --mode development",
     "production": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.6.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.12",
-    "vue-router": "^3.5.1"
+    "vue-router": "^3.5.1",
+    "bootstrap": "^5.0.0-beta1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",
