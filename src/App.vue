@@ -81,7 +81,7 @@
           </div>
         </nav>
 
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <main class="col-md-9 ms-sm-auto col-lg-10 p-md-4">
           <router-view />
         </main>
       </div>
@@ -91,4 +91,5 @@
 
 <style lang="scss">
 @import "./styles/bootstrap-bundle.scss";
+@import "./styles/dashboard.scss";
 </style>
