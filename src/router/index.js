@@ -29,8 +29,6 @@ const routes = [
       import(/* webpackChunkName: "register" */ "../views/Auth/Register.vue"),
   },
 
-
-
   // otherwise redirect to home
   { path: '*', redirect: '/' }
 ];
@@ -41,17 +39,25 @@ const router = new VueRouter({
 });
 
 // When proper login has been implemented, then remove this, as this helps with the auth.
-// router.beforeEach((to, from, next) => {
-//   // redirect to login page if not logged in and trying to access a restricted page
-//   const publicPages = ['/login'];
-//   const authRequired = !publicPages.includes(to.path);
-//   const loggedIn = localStorage.getItem('user');
+router.beforeEach((to, from, next) => {
+  // redirect to login page if not logged in and trying to access a restricted page
+  const publicPages = ['/login', '/register'];
+  const authRequired = !publicPages.includes(to.path);
+  const loggedIn = localStorage.getItem('user');
 
-//   if (authRequired && !loggedIn) {
-//     return next('/login');
-//   }
+  if (authRequired && !loggedIn) {
+    {
+      // TODO: FIX THIS, cause it's not workin on "/"
+      // document.querySelector('#sideMenu').style.visibility = 'hidden';
+      var sideMenu = document.getElementById("sideMenu")
+      if (sideMenu != null)
+        sideMenu.style.visibility = 'hidden';
 
-//   next();
-// });
+      return next('/login');
+    }
+  }
+
+  next();
+});
 
 export default router;

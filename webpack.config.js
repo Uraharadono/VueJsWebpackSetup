@@ -4,6 +4,15 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 const path = require("path");
+var webpack = require('webpack');
+
+
+// check environment mode
+var environment = process.env.NODE_ENV === 'production' ? 'production' : 'development';
+var API_URL = {
+  production: JSON.stringify('http://localhost-production:4000'),
+  development: JSON.stringify('http://localhost-development:4000')
+}
 
 module.exports = {
   entry: {
@@ -80,6 +89,9 @@ module.exports = {
       template: path.resolve(__dirname, "public", "index.html"),
       favicon: "./public/favicon.ico",
     }),
+    new webpack.DefinePlugin({
+      'API_URL': API_URL[environment]
+    }),
   ],
   resolve: {
     alias: {
@@ -104,5 +116,5 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-  },
+  }
 };

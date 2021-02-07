@@ -23,3 +23,40 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </template>
+
+<script>
+import config from "config";
+export default {
+  data() {
+    return {
+      username: "",
+      password: "",
+      submitted: false,
+    };
+  },
+  computed: {
+    loggingIn() {
+      // return this.$store.state.authentication.status.loggingIn;
+    },
+  },
+  created() {
+    // reset login status
+    // this.$store.dispatch('authentication/logout');
+  },
+  mounted() {
+    console.log(API_URL);
+    // console.log(config);
+    // console.log(config.apiUrl);
+  },
+  methods: {
+    handleSubmit(e) {
+      // this.submitted = true;
+      // const { username, password } = this;
+      // const { dispatch } = this.$store;
+      // if (username && password) {
+      //     dispatch('authentication/login', { username, password });
+      // }
+    },
+  },
+};
+</script>
