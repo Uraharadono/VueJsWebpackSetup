@@ -22,5 +22,14 @@ So we use: > moduleIds: "deterministic" - now.
 - https://code.luasoftware.com/tutorials/vuejs/vuejs-import-bootstrap-scss/ (just css)
 - https://code.luasoftware.com/tutorials/vuejs/setup-bootstrapvue-with-vue-cli/
 
-6.) For auth stuff, take a look at this solution: https://jasonwatmore.com/post/2018/07/06/vue-vuex-jwt-authentication-tutorial-example
+
+6.) For determining api route globally, I have used this as example:
+https://stackoverflow.com/questions/38164102/change-hard-coded-url-constants-for-different-environments-via-webpack
+
+but had issues with webpack not being defined, so this helped with it:
+https://stackoverflow.com/questions/31592819/referenceerror-webpack-is-not-defined
+
+7.) For auth stuff, take a look at this solution: https://jasonwatmore.com/post/2018/07/06/vue-vuex-jwt-authentication-tutorial-example
 This seems like a nice way to handle things.
+
+
