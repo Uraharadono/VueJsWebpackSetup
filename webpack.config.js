@@ -9,9 +9,9 @@ var webpack = require('webpack');
 
 // check environment mode
 var environment = process.env.NODE_ENV === 'production' ? 'production' : 'development';
-var API_URL = {
+var API_BASE_URL = {
   production: JSON.stringify('http://localhost-production:4000'),
-  development: JSON.stringify('http://localhost-development:4000')
+  development: JSON.stringify('https://jsonplaceholder.typicode.com')
 }
 
 module.exports = {
@@ -90,7 +90,7 @@ module.exports = {
       favicon: "./public/favicon.ico",
     }),
     new webpack.DefinePlugin({
-      'API_URL': API_URL[environment]
+      'API_BASE_URL': API_BASE_URL[environment]
     }),
   ],
   resolve: {

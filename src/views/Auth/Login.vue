@@ -25,7 +25,8 @@
 </template>
 
 <script>
-import config from "config";
+import ajax from "../../common/ajax";
+
 export default {
   data() {
     return {
@@ -44,9 +45,39 @@ export default {
     // this.$store.dispatch('authentication/logout');
   },
   mounted() {
-    console.log(API_URL);
-    // console.log(config);
-    // console.log(config.apiUrl);
+    // Testing GET
+    // ajax.get(`/posts`)
+    //     .then(response => console.log(response))
+    //     .catch(e => console.log(e));
+
+    // Testing POST
+    // const data = {
+    //   title: "foo",
+    //   body: "bar",
+    //   userId: 1,
+    // };
+    // ajax
+    //   .post("/posts", data)
+    //   .then((response) => console.log(response))
+    //   .catch((e) => console.log(e));
+
+    // Testing PUT
+    // const data = {
+    //   id: 1,
+    //   title: "foo",
+    //   body: "bar",
+    //   userId: 1,
+    // };
+    // ajax
+    //   .put("/posts/1", data)
+    //   .then((response) => console.log(response))
+    //   .catch((e) => console.log(e));
+
+    // Testing DELETE
+    // ajax
+    //   .del(`/posts/1`)
+    //   .then((response) => console.log(response))
+    //   .catch((e) => console.log(e));
   },
   methods: {
     handleSubmit(e) {

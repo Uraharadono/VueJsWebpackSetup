@@ -32,4 +32,4 @@ https://stackoverflow.com/questions/31592819/referenceerror-webpack-is-not-defin
 7.) For auth stuff, take a look at this solution: https://jasonwatmore.com/post/2018/07/06/vue-vuex-jwt-authentication-tutorial-example
 This seems like a nice way to handle things.
 
-
+8.) I faked api calls using: https://jsonplaceholder.typicode.com/
