@@ -488,7 +488,7 @@ body.hide-search .nav-bar .nav-bar-wrap .nav-content .page-title {
 .layout.auth .log-in-page,
 .layout.auth .sign-up-page {
 	align-items: center;
-	// background: url(../../assets/content/login-bg.jpg) 50% 50% no-repeat;
+	background: url(../assets/login-bg.jpg) 50% 50% no-repeat;
 	background-size: cover;
 	display: flex;
 	padding: 1.25rem .625rem;
@@ -566,7 +566,7 @@ body.hide-search .nav-bar .nav-bar-wrap .nav-content .page-title {
 }
 
 .layout.auth .sign-up-page {
-	// background: url(../../assets/content/signup-bg.jpg) 50% 50% no-repeat
+	background: url(../assets/signup-bg.jpg) 50% 50% no-repeat
 }
 
 .layout.auth .sign-up-page .forgot-box {

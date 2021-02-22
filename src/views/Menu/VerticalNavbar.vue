@@ -16,16 +16,20 @@
           <ul class="menu-ul">
             <li class="menu-item"><span class="group-title">Main</span></li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-ui-home"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="home" />
+                </span>
                 <span class="link-text">Dashboards</span>
                 <span class="link-badge badge-sm badge badge-info">4</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
-                  <a class="item-link" href="index.html"
-                    ><span class="link-text">Default</span></a
+                  <a class="item-link" href="index.html">
+                    <span class="link-text">Default</span></a
                   >
                 </li>
                 <li class="menu-item">
@@ -46,11 +50,15 @@
               </ul>
             </li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-database"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="database" />
+                </span>
                 <span class="link-text">Apps</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
                   <a class="item-link" href="chat.html"
@@ -75,12 +83,16 @@
               </ul>
             </li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-layers"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="layer-group" />
+                </span>
                 <span class="link-text">Widgets</span>
                 <span class="link-badge badge-sm badge badge-success">50+</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
                   <a class="item-link" href="chart-widgets.html"
@@ -103,12 +115,16 @@
               <span class="group-title">UI Kit</span>
             </li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-library"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="book" />
+                </span>
                 <span class="link-text">UI Elements</span>
                 <span class="link-badge badge-sm badge badge-danger">HOT</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
                   <a class="item-link" href="accordions.html"
@@ -218,24 +234,32 @@
               </ul>
             </li>
             <li class="menu-item">
-              <a class="item-link" href="typography.html"
-                ><span class="link-icon icofont-pencil"></span>
+              <a class="item-link" href="typography.html">
+                <span class="link-icon">
+                  <font-awesome-icon icon="pencil-alt" />
+                </span>
                 <span class="link-text">Typography</span></a
               >
             </li>
             <li class="menu-item">
-              <a class="item-link" href="icons.html"
-                ><span class="link-icon icofont-paint"></span>
+              <a class="item-link" href="icons.html">
+                <span class="link-icon">
+                  <font-awesome-icon icon="palette" />
+                </span>
                 <span class="link-text">Icons</span></a
               >
             </li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-id-card"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="chalkboard-teacher" />
+                </span>
                 <span class="link-text">Forms</span>
                 <span class="link-badge badge-sm badge badge-warning">NEW</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
                   <a class="item-link" href="form-elements.html"
@@ -255,11 +279,15 @@
               </ul>
             </li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-table"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="table" />
+                </span>
                 <span class="link-text">Tables</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
                   <a class="item-link" href="bootstrap-tables.html"
@@ -274,11 +302,15 @@
               </ul>
             </li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-map-pins"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="map-marked-alt" />
+                </span>
                 <span class="link-text">Maps</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
                   <a class="item-link" href="google-map.html"
@@ -288,11 +320,15 @@
               </ul>
             </li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-bars"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="chart-bar" />
+                </span>
                 <span class="link-text">Charts</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
                   <a class="item-link" href="chart-js.html"
@@ -315,11 +351,15 @@
               <span class="group-title">Pages</span>
             </li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-map-pins"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="map-marked-alt" />
+                </span>
                 <span class="link-text">Service pages</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
                   <a class="item-link" href="pricing.html"
@@ -344,11 +384,15 @@
               </ul>
             </li>
             <li class="menu-item has-sub">
-              <a class="item-link" href="#"
-                ><span class="link-icon icofont-bars"></span>
+              <a class="item-link" href="#">
+                <span class="link-icon">
+                  <font-awesome-icon icon="chart-bar" />
+                </span>
                 <span class="link-text">Extra pages</span>
-                <i class="link-caret icofont icofont-double-right"></i
-              ></a>
+                <i class="link-caret">
+                  <font-awesome-icon icon="angle-double-right" />
+                </i>
+              </a>
               <ul class="sub">
                 <li class="menu-item">
                   <a class="item-link" href="log-in.html"
