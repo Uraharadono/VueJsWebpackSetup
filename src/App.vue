@@ -21,10 +21,14 @@
   </div>
 </template>
 
-<style lang="scss">
-@import "./styles/bootstrap-bundle.scss";
-@import "./styles/dashboard.scss";
-</style>
+// <style lang="scss">
+// @import "./styles/bootstrap-bundle.scss";
+// @import "./styles/dashboard.scss";
+// </style>
+
+<style lang="scss" src="./styles/bootstrap-bundle.scss"></style>
+<style lang="scss" src="./styles/dashboard.scss"></style>
+
 
 <script>
 import { menuBehaviour } from "./common/menu-behaviour";

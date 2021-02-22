@@ -38,4 +38,7 @@ This seems like a nice way to handle things.
 https://stackoverflow.com/questions/47569546/dont-show-menu-on-register-login-page-in-vue
 https://stackoverflow.com/questions/42903356/hide-vue-router-from-a-page/42968754
 
-10.) 
+10.) Issue with scss not loading url background properties was resolved like so:
+https://stackoverflow.com/questions/64294706/webpack5-automatic-publicpath-is-not-supported-in-this-browser
+
+11.) 
