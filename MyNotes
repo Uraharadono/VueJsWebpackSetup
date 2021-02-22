@@ -33,3 +33,9 @@ https://stackoverflow.com/questions/31592819/referenceerror-webpack-is-not-defin
 This seems like a nice way to handle things.
 
 8.) I faked api calls using: https://jsonplaceholder.typicode.com/
+
+9.) Hiding menu on register and login:
+https://stackoverflow.com/questions/47569546/dont-show-menu-on-register-login-page-in-vue
+https://stackoverflow.com/questions/42903356/hide-vue-router-from-a-page/42968754
+
+10.) 
