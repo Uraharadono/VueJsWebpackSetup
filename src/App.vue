@@ -30,10 +30,10 @@
 
 <script>
 import { menuBehaviour } from "./common/menu-behaviour";
-import HorizontalNavbar from "./views/Menu/HorizontalNavbar.vue";
-import VerticalNavbar from "./views/Menu/VerticalNavbar.vue";
-import Footer from "./views/Menu/Footer.vue";
-import AppLoader from "./views/Menu/AppLoader.vue";
+import HorizontalNavbar from "./views/Shared/HorizontalNavbar.vue";
+import VerticalNavbar from "./views/Shared/VerticalNavbar.vue";
+import Footer from "./views/Shared/Footer.vue";
+import AppLoader from "./views/Shared/AppLoader.vue";
 
 export default {
   components: { HorizontalNavbar, VerticalNavbar, Footer, AppLoader },

@@ -9,7 +9,7 @@
 
 <script>
 import ajax from "../common/ajax";
-import AppLoader from "./Menu/AppLoader.vue";
+import AppLoader from "./Shared/AppLoader.vue";
 
 export default {
   data() {
