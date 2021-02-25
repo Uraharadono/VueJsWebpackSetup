@@ -117,55 +117,6 @@
               </div>
 
               <div class="item">
-                <a class="nav-link" data-bs-toggle="dropdown" href="#">
-                  <font-awesome-icon icon="user" />
-                </a>
-                <div
-                  class="dropdown-menu dropdown-menu-right mini-menu profile"
-                >
-                  <div class="avatar-block">
-                    <img
-                      alt="user-avatar"
-                      src="../../assets/avatarPlaceholder.png"
-                    />
-                    <span class="name">Anna Hamens</span>
-                  </div>
-                  <ul class="menu-list">
-                    <li>
-                      <a href="#" class="profile-link">
-                        <font-awesome-icon icon="id-card" />
-                        Profile
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="profile-link">
-                        <font-awesome-icon icon="inbox" />
-                        Inbox
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="profile-link">
-                        <font-awesome-icon icon="calendar-alt" />
-                        Calendar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="profile-link">
-                        <font-awesome-icon icon="sliders-h" />
-                        Settings
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="profile-link">
-                        <font-awesome-icon icon="sign-out-alt" />
-                        Log Out
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="item">
                 <a
                   class="nav-link"
                   data-bs-toggle="dropdown"
@@ -227,6 +178,55 @@
                   <div class="menu-footer">
                     <a href="#">View all events</a>
                   </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <a class="nav-link" data-bs-toggle="dropdown" href="#">
+                  <font-awesome-icon icon="user" />
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right mini-menu profile"
+                >
+                  <div class="avatar-block">
+                    <img
+                      alt="user-avatar"
+                      src="../../assets/avatarPlaceholder.png"
+                    />
+                    <span class="name">Anna Hamens</span>
+                  </div>
+                  <ul class="menu-list">
+                    <li>
+                      <a href="#" class="profile-link">
+                        <font-awesome-icon icon="id-card" />
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="profile-link">
+                        <font-awesome-icon icon="inbox" />
+                        Inbox
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="profile-link">
+                        <font-awesome-icon icon="calendar-alt" />
+                        Calendar
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="profile-link">
+                        <font-awesome-icon icon="sliders-h" />
+                        Settings
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="profile-link">
+                        <font-awesome-icon icon="sign-out-alt" />
+                        Log Out
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
 

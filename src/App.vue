@@ -23,7 +23,7 @@
 // <style lang="scss">
 // @import "./styles/bootstrap-bundle.scss";
 // @import "./styles/dashboard.scss";
-//
+// Some say way to import stuff above is bad, because vue's pathfinding is awfull
 </style>
 <style lang="scss" src="./styles/bootstrap-bundle.scss"></style>
 <style lang="scss" src="./styles/dashboard.scss"></style>

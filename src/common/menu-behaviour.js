@@ -6,6 +6,7 @@ export function menuBehaviour() {
             body.classList.add("loaded");
             menu();
             setMenuToggle();
+            setSearchListener();
         });
 
         function setMenuToggle() {
@@ -64,5 +65,19 @@ export function menuBehaviour() {
                 elements[i].addEventListener("click", menuDelegate, false);
             }
         }
+
+        function setSearchListener() {
+            var pageTitle = document.getElementById("page-title");
+            var searchBtn = document.getElementById("toggle-search");
+            var pageSearch = document.getElementById("page-search");
+        
+            if (searchBtn) {
+              searchBtn.addEventListener("click", function() {
+                searchBtn.classList.toggle("active");
+                pageSearch.classList.toggle("show");
+                pageTitle.classList.toggle("hide");
+              });
+            }
+          }
     })();
 }
