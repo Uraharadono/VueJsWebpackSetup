@@ -40,7 +40,7 @@
               <div class="item">
                 <a
                   class="nav-link"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   href="#"
                   aria-expanded="false"
                 >
@@ -117,7 +117,7 @@
               </div>
 
               <div class="item">
-                <a class="nav-link" data-toggle="dropdown" href="#">
+                <a class="nav-link" data-bs-toggle="dropdown" href="#">
                   <font-awesome-icon icon="user" />
                 </a>
                 <div
@@ -164,6 +164,72 @@
                   </ul>
                 </div>
               </div>
+
+              <div class="item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  aria-expanded="false"
+                >
+                  <font-awesome-icon icon="calendar-alt" />
+                  <span class="marker"></span>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right"
+                  x-placement="bottom-end"
+                  style="
+                    position: absolute;
+                    transform: translate3d(-140px, 44px, 0px);
+                    top: 0px;
+                    left: 0px;
+                    will-change: transform;
+                  "
+                >
+                  <div class="menu-header">
+                    <h4 class="menu-title">Events</h4>
+                  </div>
+                  <ul class="list menu-list">
+                    <li>
+                      <div class="icon">
+                        <font-awesome-icon icon="robot" />
+                      </div>
+                      <a href="#">
+                        <div class="content">
+                          <span class="desc">Android event</span>
+                          <span class="date">1 Dec 2020</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <font-awesome-icon :icon="['fab', 'java']" />
+                      </div>
+                      <a href="#">
+                        <div class="content d-flex flex-column">
+                          <span class="desc">Java dev conference</span>
+                          <span class="date">15 Dec 2020</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <font-awesome-icon :icon="['fab', 'whatsapp']" />
+                      </div>
+                      <a href="#">
+                        <div class="content">
+                          <span class="desc">Discussion about the app</span>
+                          <span class="date">22 Dec 2020</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="menu-footer">
+                    <a href="#">View all events</a>
+                  </div>
+                </div>
+              </div>
+
               <div class="items-overlay"></div>
             </div>
           </div>

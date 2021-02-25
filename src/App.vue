@@ -6,7 +6,6 @@
     <div class="layout-wrap">
       <HorizontalNavbar></HorizontalNavbar>
       <VerticalNavbar v-if="showMenu"></VerticalNavbar>
-      <!-- <VerticalNavbar></VerticalNavbar> -->
 
       <main class="main">
         <div class="content-container">
@@ -24,11 +23,10 @@
 // <style lang="scss">
 // @import "./styles/bootstrap-bundle.scss";
 // @import "./styles/dashboard.scss";
-// </style>
-
+//
+</style>
 <style lang="scss" src="./styles/bootstrap-bundle.scss"></style>
 <style lang="scss" src="./styles/dashboard.scss"></style>
-
 
 <script>
 import { menuBehaviour } from "./common/menu-behaviour";
