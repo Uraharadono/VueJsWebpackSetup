@@ -17,6 +17,7 @@ var API_BASE_URL = {
 module.exports = {
   entry: {
     main: "./src/main.js",
+    // vendor: // TODO
   },
   output: {
     filename: "[name].[contenthash:8].js",
