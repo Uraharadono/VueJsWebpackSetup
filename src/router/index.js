@@ -45,17 +45,19 @@ router.beforeEach((to, from, next) => {
   const authRequired = !publicPages.includes(to.path);
   const loggedIn = localStorage.getItem('user');
 
-  if (authRequired && !loggedIn) {
-    {
-      // TODO: FIX THIS, cause it's not workin on "/"
-      // document.querySelector('#sideMenu').style.visibility = 'hidden';
-      var sideMenu = document.getElementById("sideMenu")
-      if (sideMenu != null)
-        sideMenu.style.visibility = 'hidden';
+  // if (authRequired && !loggedIn) {
+  //   {
+  //     // TODO: FIX THIS, cause it's not workin on "/"
+  //     // document.querySelector('#sideMenu').style.visibility = 'hidden';
+  //     // var sideMenu = document.getElementById("sideMenu");
+  //     // console.log(sideMenu);
+  //     // console.log(document.querySelector('#sideMenu'));
+  //     // if (sideMenu != null)
+  //     //   sideMenu.style.visibility = 'hidden';
 
-      return next('/login');
-    }
-  }
+  //     return next('/login');
+  //   }
+  // }
 
   next();
 });

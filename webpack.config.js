@@ -22,6 +22,8 @@ module.exports = {
     filename: "[name].[contenthash:8].js",
     path: path.resolve(__dirname, "dist"),
     chunkFilename: "[name].[contenthash:8].js",
+    // I need this literally just so I can use background images in scss
+    publicPath: '', // https://stackoverflow.com/questions/64294706/webpack5-automatic-publicpath-is-not-supported-in-this-browser
   },
   module: {
     rules: [
