@@ -49,5 +49,9 @@ https://github.com/FortAwesome/vue-fontawesome
 
 12.) Loading idea taken from: https://symfonycasts.com/screencast/vue/loading
 
-13.) 
+13.) Cors issue fixed by: https://stackoverflow.com/questions/59805171/react-asp-net-core-3-cors-response-to-preflight-request-doesnt-pass-access-c
+
+14.) Auth logic looking up on the: 
+https://jasonwatmore.com/post/2018/07/06/vue-vuex-jwt-authentication-tutorial-example
+https://github.com/cornflourblue/vue-vuex-jwt-authentication-example
 
