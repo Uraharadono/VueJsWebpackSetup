@@ -96,6 +96,8 @@ export function menuBehaviour() {
             else {
                 document.getElementsByClassName("nav-bar")[0].style.paddingLeft = "0rem";
                 document.getElementsByClassName("main")[0].style.paddingLeft = "0rem";
+                document.getElementsByClassName("content-container")[0].style.margin = "0";
+                document.getElementsByClassName("content-container")[0].style.padding = "0";
             }
         }
 

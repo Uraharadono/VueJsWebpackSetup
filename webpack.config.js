@@ -11,7 +11,8 @@ var webpack = require('webpack');
 var environment = process.env.NODE_ENV === 'production' ? 'production' : 'development';
 var API_BASE_URL = {
   production: JSON.stringify('http://localhost-production:4000'),
-  development: JSON.stringify('https://jsonplaceholder.typicode.com')
+  // development: JSON.stringify('https://jsonplaceholder.typicode.com')
+  development: JSON.stringify('https://localhost:5001')
 }
 
 module.exports = {

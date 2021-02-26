@@ -5207,3 +5207,77 @@ label {
 	background: #ff8534;
 	transform: scale(1)
 }
+
+.input-control{
+	background: none;
+    border: 0;
+    border-radius: inherit;
+    box-shadow: none;
+    color: inherit;
+    cursor: inherit;
+    display: block;
+    font: inherit;
+    margin: -1px 0;
+    outline: none;
+    // padding: .625rem .2em;
+    width: 100%;
+}
+
+
+.tc-checkbox {
+	display: inline-flex;
+    line-height: 1;
+    transition: color .2s ease-in-out;
+
+	.tc-checkbox-wrap
+	{
+		align-items: center;
+		cursor: pointer;
+		display: flex;
+		padding: 0 .078125rem;
+
+		.tc-checkbox-handle {
+			align-items: center;
+    		background: transparent;
+    		border: 2px solid #07223e;
+    		border-radius: 0;
+    		color: #07223e;
+    		cursor: inherit;
+    		display: flex;
+    		height: 1.25rem;
+    		justify-content: center;
+    		margin: 0;
+    		position: relative;
+    		transition: background .2s ease-in-out,border .2s ease-in-out,color .2s ease-in-out;
+    		width: 1.25rem;
+
+			.checkbox-input {
+				cursor: inherit;
+    			opacity: 0;
+    			position: absolute;
+			}
+
+			.check-detector{
+				display: block;
+				font-size: 1.4rem;
+				transform: scale(0);
+				transition: transform .2s ease-in-out;
+			}
+			}
+
+			.tc-checkbox-label
+			{
+				color: inherit;
+				margin-left: 10px;
+				transition: color .2s ease-in-out;
+			}
+		}
+}
+
+.blue-gradient {
+	background-image: linear-gradient(
+                    to right,
+                    rgb(7, 34, 62) 0%,
+                    rgb(81, 100, 120) 100%
+                  ) !important;
+}
