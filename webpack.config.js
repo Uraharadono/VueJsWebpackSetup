@@ -96,6 +96,10 @@ module.exports = {
     new webpack.DefinePlugin({
       'API_BASE_URL': API_BASE_URL[environment]
     }),
+    // Look at MyNotes point 15 why we need this.
+    new webpack.EnvironmentPlugin({
+      'BUILD': 'web'
+    }),
   ],
   resolve: {
     alias: {

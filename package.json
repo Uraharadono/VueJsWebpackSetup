@@ -25,7 +25,8 @@
     "bootstrap": "^5.0.0-beta1",
     "core-js": "^3.8.3",
     "vue": "^2.6.12",
-    "vue-router": "^3.5.1"
+    "vue-router": "^3.5.1",
+    "vuelidate": "^0.7.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",

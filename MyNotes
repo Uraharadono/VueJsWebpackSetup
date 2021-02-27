@@ -55,3 +55,18 @@ https://github.com/FortAwesome/vue-fontawesome
 https://jasonwatmore.com/post/2018/07/06/vue-vuex-jwt-authentication-tutorial-example
 https://github.com/cornflourblue/vue-vuex-jwt-authentication-example
 
+15.) I had a lot of issues using vuevalidate library. I always got error: 
+"[vue-router] Failed to resolve async component default: ReferenceError: process is not defined" for some reason.
+
+I found solution here: https://github.com/JeffreyWay/laravel-mix/issues/2616
+That user thecrypticace answered. 
+
+Other honorable mentions and explanation why is this happening here (dig trough tree of answers):
+https://github.com/vuelidate/vuelidate/issues/365
+
+ERRORS BEING SHOWN ON THE PAGE LOAD FIX: https://github.com/vuelidate/vuelidate/issues/22
+
+16.) 
+
+
+

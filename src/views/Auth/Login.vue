@@ -10,29 +10,55 @@
         </h3>
 
         <div class="card-body" style="padding: 0px; overflow: visible">
-          <form
-            class="login-form mb-0 untouched pristine valid"
-            @submit.prevent="handleSubmit"
-          >
+          <form class="login-form mb-0" @submit.prevent="handleSubmit">
             <div class="form-group">
-              <div class="form-control">
+              <!-- <div class="form-control" :class="{ 'is-invalid': !$v.username.$error }"> -->
+              <!-- <div class="form-control" :class="status($v.username)"> -->
+
+              <div
+                class="form-control"
+                v-bind:class="[$v.username.$error ? 'is-invalid' : '', '']"
+              >
                 <input
-                  class="input-control pristine valid touched"
+                  class="input-control"
                   type="text"
                   placeholder="Login"
-                  v-model="username"
+                  v-model="$v.username.$model"
                 />
+              </div>
+              <div
+                class="text-danger"
+                v-if="!$v.username.required && $v.username.$dirty"
+              >
+                Field is required
+              </div>
+              <div
+                class="text-danger"
+                v-if="!$v.username.email && $v.username.$dirty"
+              >
+                Field has to be email
               </div>
             </div>
 
             <div class="form-group">
-              <div class="form-control">
+              <div
+                class="form-control"
+                v-bind:class="[$v.password.$error ? 'is-invalid' : '', '']"
+              >
                 <input
-                  class="input-control pristine valid touched"
+                  class="input-control"
                   type="password"
                   placeholder="Password"
                   v-model="password"
                 />
+              </div>
+              <div v-if="$v.password.$dirty">
+                <div class="text-danger" v-if="!$v.password.required">
+                  Field is required
+                </div>
+                <div class="text-danger" v-if="!$v.password.minLength">
+                  Passwords in our system are a bit longer than that
+                </div>
               </div>
             </div>
 
@@ -75,6 +101,7 @@
 
 <script>
 import ajax from "../../common/ajax";
+import { required, minLength, email } from "vuelidate/lib/validators";
 
 export default {
   data() {
@@ -83,6 +110,17 @@ export default {
       password: "",
       submitted: false,
     };
+  },
+  validations: {
+    username: {
+      required,
+      email,
+      minLength: minLength(6),
+    },
+    password: {
+      required,
+      minLength: minLength(8),
+    },
   },
   computed: {
     loggingIn() {
@@ -96,6 +134,9 @@ export default {
   mounted() {},
   methods: {
     handleSubmit(e) {
+      this.$v.$touch();
+      if (this.$v.$invalid) return;
+
       console.log(e);
 
       const data = {
@@ -105,7 +146,11 @@ export default {
       };
       ajax
         .post(`/api/Auth/Login`, data)
-        .then((response) => console.log(response))
+        .then((response) => {
+          console.log(response);
+          // router.push('home');
+          this.$router.push('home');
+        })
         .catch((e) => console.log(e));
 
       // this.submitted = true;
