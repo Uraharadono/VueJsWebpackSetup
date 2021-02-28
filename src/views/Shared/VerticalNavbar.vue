@@ -7,7 +7,7 @@
             alt="logo"
             class="logo-img"
             height="40"
-            src="../../assets/deronLogo.png"
+            src="../../assets/myAppLogo.png"
           />
         </div>
       </div>
